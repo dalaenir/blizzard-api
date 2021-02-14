@@ -1,0 +1,26 @@
+{
+	"name": "dalaenir/blizzard-api",
+	"description": "Blizzard API PHP library",
+	"type": "library",
+	"keywords": ["php", "api", "blizzard"],
+	"license": "GPL-3.0-only",
+	"authors": [
+		{
+			"name": "Dalaenir",
+			"role": "developer",
+			"email": "dalaenir@gmail.com"
+		}
+	],
+	"support": {
+		"source": "https://github.com/dalaenir/blizzard-api"
+	},
+	"autoload": {
+		"psr-4": {
+			"Dalaenir\\API\\Blizzard\\": "src/class/"
+		}
+	},
+	"minimum-stability": "stable",
+	"require": {
+		"php": ">= 7.1"
+	}
+}

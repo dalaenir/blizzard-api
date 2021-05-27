@@ -164,6 +164,8 @@ class Client {
 		$queryParams = [];
 		if(array_key_exists("namespace", $data)):
 			$queryParams["namespace"] = $data["namespace"] . "-{$this->region}";
+
+			$queryParams["namespace"] = str_replace("beta-{$this->region}", "beta", $queryParams["namespace"]);
 		endif;
 		$queryParams["locale"] = $this->locale;
 

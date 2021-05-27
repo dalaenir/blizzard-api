@@ -246,7 +246,7 @@ class Client {
 	private function send(array $curlData): string {
 		$curlData[CURLOPT_RETURNTRANSFER] = true;
 		$curlData[CURLOPT_CAINFO] = dirname(__DIR__) . DIRECTORY_SEPARATOR . "resources" . DIRECTORY_SEPARATOR . "blizzard.cer";
-		$curlData[CURLOPT_TIMEOUT] = 5;
+		$curlData[CURLOPT_TIMEOUT] = 30;
 
 		$curl = curl_init();
 		curl_setopt_array($curl, $curlData);
